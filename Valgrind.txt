@@ -1,0 +1,42 @@
+==60566== Memcheck, a memory error detector
+==60566== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==60566== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==60566== Command: ./assignment3
+==60566== Parent PID: 64648
+==60566== 
+--60566-- run: /usr/bin/dsymutil "./assignment3"
+==60566== Use of uninitialised value of size 8
+==60566==    at 0x1000009D8: Calculator::run() (in ./assignment3)
+==60566==    by 0x10000078C: main (in ./assignment3)
+==60566== 
+==60566== Invalid read of size 8
+==60566==    at 0x1000009D8: Calculator::run() (in ./assignment3)
+==60566==    by 0x10000078C: main (in ./assignment3)
+==60566==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==60566== 
+==60566== 
+==60566== Process terminating with default action of signal 11 (SIGSEGV)
+==60566==  Access not within mapped region at address 0x0
+==60566==    at 0x1000009D8: Calculator::run() (in ./assignment3)
+==60566==    by 0x10000078C: main (in ./assignment3)
+==60566==  If you believe this happened as a result of a stack
+==60566==  overflow in your program's main thread (unlikely but
+==60566==  possible), you can try to increase the size of the
+==60566==  main thread stack using the --main-stacksize= flag.
+==60566==  The main thread stack size used in this run was 8388608.
+==60566== 
+==60566== HEAP SUMMARY:
+==60566==     in use at exit: 43,183 bytes in 433 blocks
+==60566==   total heap usage: 520 allocs, 87 frees, 49,583 bytes allocated
+==60566== 
+==60566== LEAK SUMMARY:
+==60566==    definitely lost: 0 bytes in 0 blocks
+==60566==    indirectly lost: 0 bytes in 0 blocks
+==60566==      possibly lost: 0 bytes in 0 blocks
+==60566==    still reachable: 8,336 bytes in 6 blocks
+==60566==         suppressed: 34,847 bytes in 427 blocks
+==60566== Rerun with --leak-check=full to see details of leaked memory
+==60566== 
+==60566== For counts of detected and suppressed errors, rerun with: -v
+==60566== Use --track-origins=yes to see where uninitialised values come from
+==60566== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

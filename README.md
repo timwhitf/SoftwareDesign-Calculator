@@ -1,2 +1,1 @@
-# SoftwareDesign-Calculator
-Assignment 03 for Software Design class (Spring 2016).
+# cs49000-spring2016-calculator

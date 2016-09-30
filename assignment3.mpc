@@ -1,0 +1,32 @@
+// assignment3.mpc
+// Tim Whitfield
+// Honor Pledge:
+// I pledge that I have neither given nor received any help on this assignment.
+
+project (assignment3) {
+  exename = assignment3
+  install = .
+ 
+  Source_Files {
+    driver.cpp
+    Calculator.cpp
+    Stack_Expr_Cmd_Factory.cpp
+    Expr_Cmd_Factory.cpp
+    Add_Cmd.cpp
+    Subtr_Cmd.cpp
+    Mult_Cmd.cpp
+    Div_Cmd.cpp
+    Mod_Cmd.cpp
+    Binary_Op_Cmd.cpp
+    Open_Paren_Cmd.cpp
+    Num_Cmd.cpp
+    Expr_Cmd.cpp
+  }
+
+  Template_Files {
+    Push_Array.cpp
+    Array.cpp
+    Array_Base.cpp
+    Stack.cpp
+  }
+}
